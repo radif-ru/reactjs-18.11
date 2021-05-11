@@ -1,7 +1,7 @@
 {
-  "name": "Radif",
+  "name": "radif.ru",
   "version": "1.0.0",
-  "description": "",
+  "description": "radif.ru",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     "dev": "webpack serve --mode development"
   },
   "keywords": [],
-  "author": "",
+  "author": "radif.ru",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.14.0",
