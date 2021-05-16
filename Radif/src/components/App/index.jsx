@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-import {User} from "../../user";
+// import {User} from "../../user";
 import {App} from './index';
 
 // const user = new User('Oleg', 'Petrovich')
 // const messages = ['Привет, друг', 'How are you doing?'];
 //
 // const Message = (props) => <div>{props.text}</div>; // dumb component
-// const MessageList = (props) => {
+// const MessagesList = (props) => {
 //   // const el = props.messages.map((message) => <Message text={message} />);
 //   // console.log(el);
 //   return props.messages.map((message) => <Message text={message}/>)
@@ -20,7 +20,7 @@ import {App} from './index';
 // );
 //
 // ReactDom.render(
-//   <MessageList messages={messages}/>,
+//   <MessagesList messages={messages}/>,
 //   document.getElementById('root')
 // );
 

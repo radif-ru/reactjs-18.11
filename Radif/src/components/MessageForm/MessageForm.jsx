@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import TextField from '@material-ui/core/TextField';
+import Fab from '@material-ui/core/Fab';
+import SendIcon from '@material-ui/icons/Send';
 
 export class MessageForm extends Component {
   state = {
@@ -29,13 +32,20 @@ export class MessageForm extends Component {
     });
   }
 
+  handleEnterDown = (event) => {
+    if(event.ctrlKey && event.keyCode === 13) { // Ctrl + Enter (13)
+      this.handleMessageSend();
+    }
+  }
+
   render() {
     const { author, text } = this.state;
+
     return (
       <div>
-        <input placeholder="author" name="author" onChange={this.handleInputChange} type="text" value={author} /><br />
-        <textarea placeholder="text" name="text" onChange={this.handleInputChange} value={text}></textarea><br/>
-        <button onClick={this.handleMessageSend}>Send</button>
+        <TextField label="Author" name="author" onChange={this.handleInputChange} value={author} />
+        <TextField label="Text" name="text" onKeyDown={this.handleEnterDown} onChange={this.handleInputChange} value={text} />
+        <Fab variant="contained" color="primary" onClick={this.handleMessageSend}><SendIcon /></Fab>
       </div>
     );
   }
