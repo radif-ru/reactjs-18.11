@@ -1,0 +1,24 @@
+.chat-list {
+  display: flex;
+  flex-direction: column;
+  background-color: blanchedalmond;
+  height: 50%;
+  width: calc(20%);
+  align-self: baseline;
+}
+
+.chat-item {
+  border: 1px solid gray;
+
+  & a {
+    text-decoration: none;
+    color: gray;
+
+    &:hover {
+      transform: scale(1.3);
+      //transition: 0.1s;
+      color: goldenrod;
+      font-weight: 800;
+    }
+  }
+}

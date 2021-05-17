@@ -1,0 +1,16 @@
+.profile {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  font-size: 25px;
+
+  & a {
+    text-decoration: none;
+    color: goldenrod;
+  }
+
+  &:hover {
+      transform: scale(1.3);
+    }
+}

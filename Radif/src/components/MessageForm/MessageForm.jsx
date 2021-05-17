@@ -33,7 +33,7 @@ export class MessageForm extends Component {
   }
 
   handleEnterDown = (event) => {
-    if(event.ctrlKey && event.keyCode === 13) { // Ctrl + Enter (13)
+    if(event.ctrlKey && event.keyCode === 13) {
       this.handleMessageSend();
     }
   }
@@ -45,7 +45,7 @@ export class MessageForm extends Component {
       <div>
         <TextField label="Author" name="author" onChange={this.handleInputChange} value={author} />
         <TextField label="Text" name="text" onKeyDown={this.handleEnterDown} onChange={this.handleInputChange} value={text} />
-        <Fab variant="contained" color="primary" onClick={this.handleMessageSend}><SendIcon /></Fab>
+        <Fab variant="round" color="primary" onClick={this.handleMessageSend}><SendIcon /></Fab>
       </div>
     );
   }

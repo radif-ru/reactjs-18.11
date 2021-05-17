@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, 'src', 'index.jsx'),
+  devtool: 'eval-source-map', // отображение правильной карты в консоле при ошибке, перед продакшеном отключить, т.к. замедляет загрузку, увеличивает bundle!
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
@@ -13,7 +14,8 @@ module.exports = {
     extensions: ['.js', '.jsx'], // Какие файлы искать при импорте. Очерёдность по приоритету
     alias: {
       components: path.resolve(__dirname, 'src', 'components'), // Папки в которых следует искать компоненты
-      assets: path.resolve(__dirname, 'src', 'assets')
+      assets: path.resolve(__dirname, 'src', 'assets'),
+      pages: path.resolve(__dirname, 'src', 'pages')
     }
   },
   module: {
@@ -42,5 +44,12 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'main.css',
     })
-  ]
+  ],
+  devServer: {
+    historyApiFallback: true,
+    // port: 8080,
+    // historyApiFallback: {
+    //   index: 'index.html'
+    // }
+  }
 };
