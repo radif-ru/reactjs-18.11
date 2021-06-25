@@ -15,7 +15,10 @@ module.exports = {
     alias: {
       components: path.resolve(__dirname, 'src', 'components'), // Папки в которых следует искать компоненты
       assets: path.resolve(__dirname, 'src', 'assets'),
-      pages: path.resolve(__dirname, 'src', 'pages')
+      pages: path.resolve(__dirname, 'src', 'pages'),
+      actions: path.resolve(__dirname, 'src', 'actions'),
+      reducers: path.resolve(__dirname, 'src', 'reducers'),
+      containers: path.resolve(__dirname, 'src', 'containers'),
     }
   },
   module: {

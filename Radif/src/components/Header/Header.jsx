@@ -17,7 +17,7 @@ export class Header extends Component {
 }
 
   render() {
-    const {id, messages, name} = this.props;
+    const {name} = this.props;  // Теперь данный элемент не передаётся
 
     return (
       <div className='header'>
