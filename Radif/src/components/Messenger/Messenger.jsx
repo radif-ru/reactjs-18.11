@@ -1,51 +1,45 @@
 import './Messenger.css';
 
-import React, {Component, PureComponent} from 'react';
+import React, {Fragment, PureComponent} from 'react';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
 import {Link} from 'react-router-dom';
+import {Button} from '@material-ui/core';
 
 import {MessagesList} from 'components/MessagesList';
 import {MessageForm} from 'components/MessageForm';
-import {Header} from 'components/Header';
+// import {Header} from 'components/Header';
 import {ChatList} from 'components/ChatList';
+import {HeaderRedux} from 'containers/HeaderContainer';
 
-export class Messenger extends Component {
-  // componentDidUpdate() {
-  //   if (this.messages.length) {
-  //     const {author} = this.messages[this.messages.length - 1];
-  //     if (author !== 'Bot') {
-  //       setTimeout(() => {
-  //         this.handleMessageSend({
-  //           text: `Привет, ${author}! Бот на связи!`,
-  //           author: 'Bot'
-  //         });
-  //       }, 1000);
-  //     }
-  //   }
-  // }
+export class Messenger extends PureComponent {
 
   render() {
-    const {chats, messages, sendMessage} = this.props;
+    const {chats, messages, sendMessage, addChat} = this.props;
 
     return (
-      <div className="messenger">
-        {/*<Header {...this.chat}/>*/}
-        <Header/>
-        <ChatList chats={chats}/>
-        {messages ? <MessagesList items={messages}/>
-          : 'Пожалуйста, выберите чат, чтобы продолжить общение'}
-        {messages && <MessageForm onSend={sendMessage}/>}
-        <Link to="/profile" style={{
-          width: '100%',
-          textDecoration: 'none',
-          alignItems: 'center',
-          textAlign: 'center',
-          padding: '15px',
-          fontSize: '25px',
-          color: 'goldenrod'
-        }}>
-          Profile
-        </Link>
-      </div>
+      <Fragment>
+        <HeaderRedux/>
+        <div className="messenger">
+          {/*<Header {...this.chat}/>*/}
+          <ChatList chats={chats} addChat={addChat}/>
+          {messages ? <MessagesList items={messages}/>
+            : 'Пожалуйста, выберите чат, чтобы продолжить общение'}
+          {messages && <MessageForm onSend={sendMessage}/>}
+          <Link to="/profile" style={{
+            width: '100%',
+            textDecoration: 'none',
+            alignItems: 'center',
+            textAlign: 'center',
+            padding: '15px',
+            fontSize: '25px',
+            color: 'goldenrod'
+          }}>
+            Profile
+          </Link>
+        </div>
+      </Fragment>
     )
   }
 }
