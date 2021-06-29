@@ -1,11 +1,7 @@
 import './Messenger.css';
 
 import React, {Fragment, PureComponent} from 'react';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 import {Link} from 'react-router-dom';
-import {Button} from '@material-ui/core';
 
 import {MessagesList} from 'components/MessagesList';
 import {MessageForm} from 'components/MessageForm';
@@ -13,17 +9,17 @@ import {MessageForm} from 'components/MessageForm';
 import {ChatList} from 'components/ChatList';
 import {HeaderRedux} from 'containers/HeaderContainer';
 
-export class Messenger extends PureComponent {
 
+export class Messenger extends PureComponent {
   render() {
-    const {chats, messages, sendMessage, addChat} = this.props;
+    const {chats, messages, sendMessage, addChat, removeChat} = this.props;
 
     return (
       <Fragment>
         <HeaderRedux/>
         <div className="messenger">
           {/*<Header {...this.chat}/>*/}
-          <ChatList chats={chats} addChat={addChat}/>
+          <ChatList chats={chats} addChat={addChat} removeChat={removeChat}/>
           {messages ? <MessagesList items={messages}/>
             : 'Пожалуйста, выберите чат, чтобы продолжить общение'}
           {messages && <MessageForm onSend={sendMessage}/>}

@@ -17,11 +17,11 @@ export class Header extends PureComponent {
 
     return (
       <header className='header'>
-        Hi from header!
+        <span className='header-name'>Список чатов:</span>
         {
-          chats && chats.length && <ul>
-            {chats.map((chat, idx) => <li key={idx}>{chat.name}</li>)}
-          </ul>
+          chats && chats.length && <div className='header-elements'>
+            {chats.map((chat, idx) => <span key={idx}>{chat.name}; </span>)}
+          </div>
         }
       </header>
     );
