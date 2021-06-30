@@ -1,10 +1,2 @@
-{"name":"Chat 1","messages":[],"_id":"6O0bxA7fYWteGsDE"}
-{"name":"Chat 2","messages":[],"_id":"f39czfKa10oQaiFg"}
-{"name":"Chat 1","messages":[{"author":"Ivan","text":"Dam v zhban"}],"_id":"6O0bxA7fYWteGsDE"}
-{"name":"Chat 1","messages":[{"author":"Ivan","text":"Dam v zhban"},{"chatId":"6O0bxA7fYWteGsDE","author":"Bot","text":"Привет, Ivan! Бот на связи!"}],"_id":"6O0bxA7fYWteGsDE"}
-{"name":"Chat 1","messages":[{"author":"Ivan","text":"Dam v zhban"},{"chatId":"6O0bxA7fYWteGsDE","author":"Bot","text":"Привет, Ivan! Бот на связи!"},{"author":"Ivan","text":"Zdorova"}],"_id":"6O0bxA7fYWteGsDE"}
-{"name":"Chat 1","messages":[{"author":"Ivan","text":"Dam v zhban"},{"chatId":"6O0bxA7fYWteGsDE","author":"Bot","text":"Привет, Ivan! Бот на связи!"},{"author":"Ivan","text":"Zdorova"},{"chatId":"6O0bxA7fYWteGsDE","author":"Bot","text":"Привет, Ivan! Бот на связи!"}],"_id":"6O0bxA7fYWteGsDE"}
-{"name":"Chat 1","messages":[{"author":"Ivan","text":"Dam v zhban"},{"chatId":"6O0bxA7fYWteGsDE","author":"Bot","text":"Привет, Ivan! Бот на связи!"},{"author":"Ivan","text":"Zdorova"},{"chatId":"6O0bxA7fYWteGsDE","author":"Bot","text":"Привет, Ivan! Бот на связи!"},{"author":"Oleg","text":"Привет!"}],"_id":"6O0bxA7fYWteGsDE"}
 {"name":"Chat 1","messages":[{"author":"Ivan","text":"Dam v zhban"},{"chatId":"6O0bxA7fYWteGsDE","author":"Bot","text":"Привет, Ivan! Бот на связи!"},{"author":"Ivan","text":"Zdorova"},{"chatId":"6O0bxA7fYWteGsDE","author":"Bot","text":"Привет, Ivan! Бот на связи!"},{"author":"Oleg","text":"Привет!"},{"chatId":"6O0bxA7fYWteGsDE","author":"Bot","text":"Привет, Oleg! Бот на связи!"}],"_id":"6O0bxA7fYWteGsDE"}
-{"name":"Chat 2","messages":[{"author":"Vasya","text":"Я Вася!"}],"_id":"f39czfKa10oQaiFg"}
 {"name":"Chat 2","messages":[{"author":"Vasya","text":"Я Вася!"},{"chatId":"f39czfKa10oQaiFg","author":"Bot","text":"Привет, Vasya! Бот на связи!"}],"_id":"f39czfKa10oQaiFg"}
