@@ -1,9 +1,0 @@
-.form-message {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 100%;
-
-    & > *:not(:last-child) {
-        margin-bottom: 10px;
-    }
-}

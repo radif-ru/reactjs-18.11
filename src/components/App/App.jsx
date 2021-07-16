@@ -15,7 +15,7 @@ export class App extends Component {
     const { isVisible } = this.state;
     return (
       <div>
-        {isVisible && <Counter />}
+        {isVisible && <Counter initial={5}/>}
         <button onClick={this.handleToggle}>Toggle</button>
       </div>
     );

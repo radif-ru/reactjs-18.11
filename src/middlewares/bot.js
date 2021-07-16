@@ -8,7 +8,9 @@ export function bot(store) {
 
         if (author !== 'Bot') {
           setTimeout(() => {
-            store.dispatch(send({ chatId, author: 'Bot', text: `Привет, ${author}! Бот на связи!` }))
+            store.dispatch(send(
+              { chatId, author: 'Bot', text: `Привет, ${author}! Бот на связи!` })
+            )
           }, 1000);
         }
       }

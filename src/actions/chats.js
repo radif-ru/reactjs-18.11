@@ -1,4 +1,4 @@
-import { createAction } from 'redux-actions';
+import {createAction} from 'redux-actions';
 import io from 'socket.io-client';
 
 const socket = io('http://localhost:3000');
@@ -9,7 +9,7 @@ export const add = createAction('[Chats] Add');
 export const remove = createAction('[Chats] Remove');
 
 export function listen() {
-  return function(dispatch) {
+  return function (dispatch) {
     fetch('http://localhost:3000/chats')
       .then((response) => response.json())
       .then((chats) => {
@@ -27,7 +27,7 @@ export function listen() {
 }
 
 export function removeChat(chatId) {
-  return function(dispatch) {
+  return function (dispatch) {
     fetch(`http://localhost:3000/chats/${chatId}`, {
       method: 'DELETE',
     })

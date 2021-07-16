@@ -4,6 +4,8 @@
     margin: auto;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    /*flex-direction: column;*/
     justify-content: center;
+    flex-flow: row wrap;
+    background-color: beige;
 }

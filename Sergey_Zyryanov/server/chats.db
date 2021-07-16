@@ -1,8 +1,0 @@
-{"name":"test12","messages":[{"text":"234","author":"anna"},{"chatId":"5B72mhyYl2Rfb5Gj","author":"Bot","text":"Привет, anna! Бот на связи!"}],"_id":"5B72mhyYl2Rfb5Gj"}
-{"name":"chat1","messages":[{"text":"123","author":"serg"},{"chatId":"Fc66Akh0JE602kCB","author":"Bot","text":"Привет, serg! Бот на связи!"},{"text":"wer23","author":"fan"},{"chatId":"Fc66Akh0JE602kCB","author":"Bot","text":"Привет, fan! Бот на связи!"}],"_id":"Fc66Akh0JE602kCB"}
-{"name":"test2","messages":[{"text":"123","author":"serg"},{"chatId":"IPKKiFpGE4Z2qFpV","author":"Bot","text":"Привет, serg! Бот на связи!"},{"text":"df","author":"serg"},{"chatId":"IPKKiFpGE4Z2qFpV","author":"Bot","text":"Привет, serg! Бот на связи!"},{"text":"123","author":"anton"},{"chatId":"IPKKiFpGE4Z2qFpV","author":"Bot","text":"Привет, anton! Бот на связи!"},{"text":"hello","author":"vadim"},{"chatId":"IPKKiFpGE4Z2qFpV","author":"Bot","text":"Привет, vadim! Бот на связи!"}],"_id":"IPKKiFpGE4Z2qFpV"}
-{"name":"chat3","messages":[],"_id":"edQY72ArUEU7MrUv"}
-{"name":"chat2","messages":[],"_id":"xl1olL3pVZIfzgpg"}
-{"name":"chat2","messages":[{"text":"234","author":"serg"}],"_id":"xl1olL3pVZIfzgpg"}
-{"name":"chat2","messages":[{"text":"234","author":"serg"},{"chatId":"xl1olL3pVZIfzgpg","author":"Bot","text":"Привет, serg! Бот на связи!"}],"_id":"xl1olL3pVZIfzgpg"}
-{"$$deleted":true,"_id":"5B72mhyYl2Rfb5Gj"}
